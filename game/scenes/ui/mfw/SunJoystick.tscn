@@ -1,0 +1,16 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://game/scenes/ui/mfw/SunJoystick.gd" id="1_joy"]
+
+[node name="SunJoystick" type="Control"]
+editor_description = "Bottom-right sunlight virtual joystick. Transparent background. Draggable circular handle steers SunRig target azimuth/elevation."
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_joy")
+base_radius = 110.0
+handle_radius = 36.0
+drag_sensitivity = 1.0
+key_azimuth_speed = 135.0
+key_elevation_speed = 135.0
